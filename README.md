@@ -140,7 +140,7 @@ olhar para onde anda, a rotação em y é `atan2(B'.x, B'.z)`.
 
 | Modelo                      | Autor          | Licença   | Link                  |
 | --------------------------- | -------------- | --------- | --------------------- |
-| FREE* Isometric* Cafe_remix | HiQ3D          | CC BY 4.0 | https://skfb.ly/p9uFZ |
+| FREE_ Isometric_ Cafe_remix | HiQ3D          | CC BY 4.0 | https://skfb.ly/p9uFZ |
 | Chonky Cat Trio             | Kanna-Nakajima | CC BY 4.0 | https://skfb.ly/oOTtn |
 
 **Créditos (atribuição exigida pela licença):**
