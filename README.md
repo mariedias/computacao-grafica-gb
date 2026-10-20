@@ -1,4 +1,4 @@
-# Café dos Gatinhos: Visualizador 3D com OpenGL moderna
+# Café dos Gatinhos: Visualizador 3D
 
 Trabalho final (Atividade Vivencial, Grau B) da disciplina de Computação Gráfica (Unisinos).
 
