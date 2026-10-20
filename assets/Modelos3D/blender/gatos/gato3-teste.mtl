@@ -1,0 +1,8 @@
+# gato3-teste.mtl (exportado do Blender, coeficientes ajustados a mao)
+newmtl Cat03
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.4 0.4 0.4
+Ns 48
+map_Kd Image_2.png
+

@@ -1,0 +1,76 @@
+# ============================================================================
+#  Arquivo de configuracao da cena: Cafe dos Gatinhos
+#  Cada linha comeca com uma palavra-chave. Linhas com # sao comentarios.
+#  Os caminhos dos .obj sao relativos a pasta assets/.
+#  Unidades: o cafe tem 2 x 2 x 2; o piso fica em y = 0.164.
+# ============================================================================
+
+# camera  posX posY posZ   yaw pitch   fov near far   velocidade
+camera   -0.9 1.55 2.6       -72 -24     45  0.05 50    1.2
+
+# luz ambiente (Ia) e atenuacao (Kc Kl Kq)
+ambiente  0.3
+atenuacao 1.0 0.09 0.032
+fundo     0.97 0.89 0.87
+
+# velocidade dos objetos nas trajetorias (unidades por segundo)
+velocidade 0.35
+
+# --- iluminacao de tres pontos -----------------------------------------------
+# luz  nome   x y z             r g b            intensidade
+luz    key   -1.2 2.6 2.2       1.0 0.95 0.85    1.6
+luz    fill   2.2 1.4 1.8       0.80 0.85 1.0    0.7
+luz    back   0.6 2.6 -1.6      1.0 1.0 1.0      0.9
+
+# --- objetos ------------------------------------------------------------------
+# objeto nome  arquivo                        tx ty tz              rx ry rz   escala
+
+objeto cafe   Modelos3D/blender/cafe/cafe-teste.obj   0 0 0   0 0 0   1
+fixo
+
+# Gatos. Os pontos de controle ("ponto") sao lidos de 3 em 3: cada trecho e uma
+# Bezier cubica P0 P1 P2 P3 e o P3 de um trecho e o P0 do proximo. Com um numero
+# de pontos multiplo de 3 o ultimo trecho termina no primeiro ponto (curva fechada).
+# Objetos com trajetoria comecam no primeiro ponto (o tx ty tz e substituido).
+
+# gato 1: da voltas no corredor entre a vitrine e a pia
+objeto gato1   Modelos3D/blender/gatos/gato1-teste.obj   0.17 0.164 0.45   0 0 0   0.28
+ponto  0.17 0.164  0.45
+ponto  0.17 0.164 -0.10
+ponto  0.17 0.164 -0.40
+ponto  0.32 0.164 -0.40
+ponto  0.47 0.164 -0.40
+ponto  0.47 0.164 -0.10
+ponto  0.47 0.164  0.45
+ponto  0.47 0.164  0.65
+ponto  0.17 0.164  0.65
+
+# gato 2: pula do chao para cima da vitrine, da a volta e pula de novo para o chao
+objeto gato2   Modelos3D/blender/gatos/gato2-teste.obj      -0.42 0.164 0.62      0 0 0      0.28
+ponto -0.42 0.164 0.62
+ponto -0.32 0.75  0.62
+ponto -0.22 0.98  0.62
+ponto -0.15 0.83  0.62
+ponto  0.02 0.83  0.64
+ponto  0.02 0.83  0.48
+ponto -0.15 0.83  0.50
+ponto -0.25 0.98  0.50
+ponto -0.35 0.75  0.48
+ponto -0.42 0.164 0.48
+ponto -0.55 0.164 0.47
+ponto -0.55 0.164 0.63
+
+# gato 3: passeia em cima da mesa, perto das xicaras
+objeto gato3   Modelos3D/blender/gatos/gato3-teste.obj      -0.60 0.64 0.92       0 0 0      0.28
+ponto -0.60 0.64 0.92
+ponto -0.68 0.64 0.92
+ponto -0.77 0.64 0.92
+ponto -0.85 0.64 0.92
+ponto -0.93 0.64 0.92
+ponto -0.93 0.64 0.84
+ponto -0.85 0.64 0.84
+ponto -0.77 0.64 0.84
+ponto -0.68 0.64 0.84
+ponto -0.60 0.64 0.84
+ponto -0.52 0.64 0.84
+ponto -0.52 0.64 0.92

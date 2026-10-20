@@ -1,0 +1,55 @@
+# cafe-teste.mtl
+
+newmtl Emmision
+Ka 3 3 3
+Kd 1 1 1
+Ks 0 0 0
+Ns 32
+map_Kd Image_0.jpg
+
+newmtl Menu
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.3 0.3 0.3
+Ns 32
+map_Kd Image_2.jpg
+
+newmtl Shop
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.3 0.3 0.3
+Ns 32
+map_Kd Image_0.jpg
+
+newmtl Wood
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+Ns 16
+map_Kd Image_5.jpg
+
+newmtl gradient_glossy
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.8 0.8 0.8
+Ns 96
+map_Kd Image_4.jpg
+
+newmtl material_0
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.6 0.6 0.6
+Ns 64
+
+newmtl tbjr_material
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.3 0.3 0.3
+Ns 32
+map_Kd Image_4.jpg
+
+newmtl wall2
+Ka 1 1 1
+Kd 0.412 0.412 0.412
+Ks 0.05 0.05 0.05
+Ns 8
